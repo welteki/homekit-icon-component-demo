@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Homekit Icons</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="page-content">
+      <div class="wrapper">
+        <div class="frame">
+          <p>Dark themed icons</p>
+          <div class="icon-container container-dark">
+            <floorlamp-icon class="icon"></floorlamp-icon>
+            <outlet-icon class="icon"></outlet-icon>
+            <desklamp-icon class="icon"></desklamp-icon>
+            <bulb-icon class="icon"></bulb-icon>
+            <fan-icon class="icon"></fan-icon>
+            <lamp-icon class="icon"></lamp-icon>
+          </div>
+        </div>
+    
+        <div class= "frame">
+          <p>Light themed icons</p>
+          <div class="icon-container container-light">
+            <floorlamp-icon class="icon" type="light"></floorlamp-icon>
+            <outlet-icon class="icon" type="light"></outlet-icon>
+            <desklamp-icon class="icon" type="light"></desklamp-icon>
+            <bulb-icon class="icon" type="light"></bulb-icon>
+            <fan-icon class="icon" type="light"></fan-icon>
+            <lamp-icon class="icon" type="light"></lamp-icon>
+          </div>
+        </div>
+      </div>
+    
+      <div class="toggle-switch">
+        <p id="switch-status">ON</p>
+        <label class="switch-wrapper">
+          <input id="toggle-switch" type="checkbox" checked="true">
+          <span class="slider"></span>
+        </label>
+      <div>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
